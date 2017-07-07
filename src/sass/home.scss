@@ -1,0 +1,32 @@
+.quick-section {
+  i.icon {
+    font-size: 2.3rem;
+    color: #fff;
+    margin-top: 0.3rem;
+    display: inline-block;
+    margin-left: .1rem;
+  }
+  .icon-inner {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 3rem;
+    background-color: #c33a54;
+    position: relative;
+    margin-bottom: 0.56rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+}
+
+.page-responsive {
+  .inner {
+    line-height: 200%;
+  }
+}
+
+.page-page {
+  @extend .page-responsive;
+  padding-bottom: 3.8rem;
+  // line-height: 200%;
+}

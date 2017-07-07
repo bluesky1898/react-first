@@ -1,0 +1,211 @@
+$bg_color: #f5f5f5;
+
+.template-type {
+
+  $width: 7.33rem;
+  box-sizing: border-box;
+  padding: .83rem 0px 0px 0px;
+
+  &:first-child {
+    padding-top: 0px;
+  }
+
+  h4 {
+    font-size: 1.06rem;
+    color: #1e1e1e;
+    margin-bottom: .5rem;
+  }
+
+  p {
+    font-size: .9rem;
+    color: #838383;
+  }
+
+  .inner {
+    padding: 0px 1.16rem;
+    @include clearfix;
+  }
+
+  &.card-template {
+    padding: 0px;
+    
+    .inner {
+      padding-bottom: .8rem;
+      padding-top: .8rem;
+    }
+
+    img {
+      float: left;
+      width: $width;
+    }
+    .right {
+      margin-left: $width + .8rem;
+    }
+  }
+
+  &.card-light-template {
+    $light_width: 3.33rem;
+    padding: 0px;
+  
+    .inner {
+      padding-right: 2.67rem;
+      position: relative;
+      padding-bottom: .8rem;
+      padding-top: .8rem;
+
+      &:before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: .4rem;
+        height: .73rem;
+        right: .8rem;
+        top: 50%;
+        color: #b3b3b3;
+        margin-right: .37rem;
+        background: url(../misc/images/arrow-icon.png) 100% no-repeat;
+      }
+    }
+
+    img {
+      width: $light_width;
+    }
+
+    .right {
+      margin-left: $light_width + .8rem;
+    }
+  }
+
+  &.template-poster {
+    img {
+      width: 100%;
+    }
+
+    .bottom {
+      margin-top: 10px;
+      position: relative;
+
+      i {
+        font-size: 0.9rem;
+        color: #1298d7;
+        position: absolute;
+        right: 10px;
+        top: 0px;
+      }
+    }
+  }
+
+  &.template-avatar {
+
+    position: relative;
+    display: -webkit-flex;
+    display: flex;
+    padding: .83rem 0px;
+    margin: 0px;
+    
+    .inner {
+      margin: auto;
+    }
+
+    img {
+      width: 100%;
+      display: block;
+    }
+
+    i {
+      display: block;
+      width: 100%;
+      text-align: center;
+      margin-top: .83rem;
+    }
+  }
+}
+
+
+.template-type-6 {
+  
+  @include clearfix;
+
+  background: #fff;
+
+  .template-type {
+    width: 33.33%;
+    float: left;
+    border-right: 1px solid #f5f5f5;
+    border-bottom: 1px solid #f5f5f5;
+    background: #fff;
+  }
+}
+
+.template-type-5 {
+  background: $bg_color;
+
+  .inner {
+    padding: 0px;
+  }
+}
+
+.template-type-4 {
+  padding-bottom: 0px;
+  background: $bg_color;
+
+  .inner {
+    padding: 0px;
+    background: #fff;
+
+    img {
+      border-radius: 6px 6px 0px 0px;
+    }
+
+    h4 {
+      text-indent: .5rem;
+    }
+  }
+
+  .template-type {
+    background: #f7f7f7;
+    padding: 0px 1rem 1rem 1rem;
+
+    &:last-child {
+      padding-bottom: 0px;
+    }
+
+    &:first-child {
+      margin-top: 0px;
+    }
+  }
+}
+
+.card-template {
+  border-bottom: 1px solid $bg_color;
+}
+
+.card-light-template {
+  @extend .card-template;
+}
+
+
+.template-type-group {
+  border-top: .83rem solid $bg_color;
+}
+
+.template-type-4 {
+  i {
+
+    &:after {
+      content: "";
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      background: url(../misc/images/arrow-icon-blue.png) 100% no-repeat;
+    }
+  }
+}
+
+
+.template-type-4 {
+  h4 {
+    margin-bottom: .8rem;
+  }
+}
+

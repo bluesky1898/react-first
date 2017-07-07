@@ -1,0 +1,11 @@
+@media all and (max-width: 320px)  {
+  html, body {
+    font-size: 12px; 
+  }
+}
+
+@media (min-width: 321px) and (max-width: 375px)  {
+  html, body {
+    font-size: 13px; 
+  }
+}
